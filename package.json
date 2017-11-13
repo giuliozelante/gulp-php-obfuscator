@@ -30,7 +30,7 @@
   "scripts": {
     "start": "webpack --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
-    "postinstall": "webpack --config webpack.prod.js"
+    "postinstall": "webpack -p --config webpack.prod.js --progress"
   },
   "bugs": {
     "url": "https://github.com/giuliozelante/gulp-php-obfuscator/issues"
