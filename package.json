@@ -33,7 +33,8 @@
   },
   "scripts": {
     "start": "webpack --config webpack.dev.js",
-    "build": "webpack --config webpack.prod.js --color"
+    "build": "webpack --config webpack.prod.js --color",
+    "postinstall": "webpack --config webpack.prod.js --color"
   },
   "bugs": {
     "url": "https://github.com/giuliozelante/gulp-php-obfuscator/issues"
