@@ -117,3 +117,4 @@ fabric.properties
 *.iml
 out
 gen
+/lib/
