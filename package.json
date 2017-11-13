@@ -2,17 +2,37 @@
   "name": "gulp-php-obfuscator",
   "version": "0.0.1",
   "description": "gulp plugin for node module uglify-php",
-  "main": "index.js",
+  "main": "lib/gulp-php-obfuscator.js",
   "repository": "https://github.com/giuliozelante/gulp-php-obfuscator.git",
   "author": "Giulio Zelante",
   "license": "MIT",
   "files": [
-    "index.js"
+    "lib/gulp-php-obfuscator.js"
   ],
   "dependencies": {
-    "gulp-util": "^3.0.8",
     "through2": "^2.0.3",
     "uglify-php": "^1.0.3"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@types/gulp": "^4.0.5",
+    "@types/gulp-util": "^3.0.34",
+    "@types/node": "^8.0.51",
+    "awesome-typescript-loader": "^3.3.0",
+    "clean-webpack-plugin": "^0.1.17",
+    "gulp-util": "^3.0.8",
+    "ts-loader": "^3.1.1",
+    "typescript": "^2.6.1",
+    "uglifyjs-webpack-plugin": "^1.0.1",
+    "webpack": "^3.8.1",
+    "webpack-closure-compiler": "^2.1.5",
+    "webpack-merge": "^4.1.1"
+  },
+  "scripts": {
+    "start": "webpack --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js"
+  },
+  "bugs": {
+    "url": "https://github.com/giuliozelante/gulp-php-obfuscator/issues"
+  },
+  "homepage": "https://github.com/giuliozelante/gulp-php-obfuscator"
 }
