@@ -16,6 +16,9 @@
     "through2": "^2.0.3",
     "uglify-php": "^1.0.3"
   },
+  "engines": {
+    "node": ">=0.10.0"
+  },
   "devDependencies": {
     "@types/gulp": "^4.0.5",
     "@types/gulp-util": "^3.0.34",
@@ -29,8 +32,7 @@
   },
   "scripts": {
     "start": "webpack --config webpack.dev.js",
-    "build": "webpack --config webpack.prod.js",
-    "postinstall": "webpack -p --config webpack.prod.js --progress"
+    "build": "webpack --config webpack.prod.js --color"
   },
   "bugs": {
     "url": "https://github.com/giuliozelante/gulp-php-obfuscator/issues"
